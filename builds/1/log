@@ -1,0 +1,26 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/Cricinfo
+Cloning the remote Git repository
+Cloning repository https://github.com/skmuralibabu/cricinfo.git
+ > git init /var/lib/jenkins/workspace/Cricinfo # timeout=10
+Fetching upstream changes from https://github.com/skmuralibabu/cricinfo.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git8550906290192939401.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/skmuralibabu/cricinfo.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/skmuralibabu/cricinfo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/skmuralibabu/cricinfo.git # timeout=10
+Fetching upstream changes from https://github.com/skmuralibabu/cricinfo.git
+using .gitcredentials to set credentials
+ > git config --local credential.helper store --file=/tmp/git5184958971371724632.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/skmuralibabu/cricinfo.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 02d05f4982d729261828c3d125ee5c6c622c5729 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 02d05f4982d729261828c3d125ee5c6c622c5729
+First time build. Skipping changelog.
+Finished: SUCCESS
